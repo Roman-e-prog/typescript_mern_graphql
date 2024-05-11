@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "name":"Über mich",
+        "link":"/uebermich"
+    },
+    {
+        "id":2,
+        "name":"Blog",
+        "link":"/blog"
+    },
+    {
+        "id":3,
+        "name":"Forum",
+        "link":"/forum"
+    },
+    {
+        "id":4,
+        "name":"Bibliothek",
+        "link":"/bibliothek"
+    },
+    {
+        "id":5,
+        "name":"Register",
+        "link":"/register"
+    }
+]

@@ -1,0 +1,15 @@
+@import '../../_variables';
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background:$mainBg;
+}
+.fieldWrapper{
+    width: 100%;
+    padding: 20px;
+    & p{
+        color:$fontColor;
+        white-space: pre-wrap;
+    }
+}

@@ -1,0 +1,72 @@
+@import '../../_variables';
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background:$mainBg;
+}
+
+.theme{
+    width:100%;
+    padding-left: 60px;
+    margin-top: 20px;
+
+    & h2{
+        color:$fontColor;
+    }
+}
+.htmlSliderWrapper, .cssSliderWrapper, .javaScriptSliderWrapper{
+    display:flex;
+    align-items: center;
+    position:relative;
+
+    & .arrowLeft{
+        position:absolute;
+        top:0;
+        bottom:0;
+        margin: auto;
+        color:red;
+        font-size: 30px;
+        left:10px;
+        z-index:5;
+    }
+    & .arrowRight{
+        position:absolute;
+        top:0;
+        bottom:0;
+        margin: auto;
+        color:red;
+        font-size: 30px;
+        right:10px;
+        z-index:5;
+    }
+    & .fieldWrapper{
+        border:1px solid $elementColor;
+        background:$secondBg;
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        & .sliderlink{
+            width:100%;
+            height:inherit;
+        }
+        & iframe{
+            width: 100%;
+        }
+        & h5{
+            color:$fontColor;
+            margin-bottom: 10px;
+        }
+        & .ressort{
+            color:red;
+            font-weight:600;
+            margin-bottom: 10px;
+        }
+        & p{
+            color:$fontColor;
+            margin-bottom:10px;
+        }
+    }
+    
+}

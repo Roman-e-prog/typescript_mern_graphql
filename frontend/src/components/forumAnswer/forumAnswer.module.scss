@@ -1,0 +1,59 @@
+@import '../../variables';
+
+.container{
+    width: 100%;
+}
+.closeWrapper{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    & span{
+        color:$fontColor;
+        cursor:pointer;
+        font-size:30px;
+        font-weight:bold;
+    }
+}
+.stop{
+    width: 80%;
+    margin: 0 auto;
+    @include center();
+    flex-direction: column;
+    margin-bottom: 20px;
+    background:$elementColor;
+    padding: 10px;
+    & p{
+        margin-bottom: 20px;
+        color:$buttonFont;
+        font-weight: bold;
+    }
+    & #loginLink{
+        margin-bottom: 20px;
+        color:$buttonFont;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+.answerInput{
+    width: 80%;
+    margin: 0 auto;
+    color:#ccc;
+}
+.buttonWrapper{
+    width: 80%;
+    margin: 10px auto; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    & .sendButton{
+        padding: 10px;
+        background:$elementColor;
+        color:$buttonFont;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}

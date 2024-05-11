@@ -1,0 +1,101 @@
+@import '../../_variables';
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: $mainBg;
+    color:$fontColor;
+}
+.backToForum{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 40px;
+
+    & .navigateBtn{
+        padding: 10px;
+        margin-top: 10px;
+        background:$elementColor;
+        color:$buttonFont;
+        font-weight: bold;
+        cursor:pointer;
+    }
+}
+.putAnswer{
+    width: 100%;
+}
+.chatWrapper{
+    width: 100%;
+    padding: 10px;
+}
+.fieldWrapper{
+    width: 80%;
+    min-height:200px;
+    margin: 5px auto;
+    border: 1px solid $elementColor;
+    @include flex();
+}
+@include small{
+    .fieldWrapper{
+        width: 100%;
+    }
+}
+.postWrapper{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+}
+.headWrapper{
+    width: 100%;
+    height:20%;
+    min-height:25px;
+    @include around();
+    border-bottom: 1px solid $elementColor;
+    flex-wrap:wrap;
+}
+.questionWrapper, .answerWrapper{
+    width: 100%;
+    height:60%;
+    min-height: 140px;
+    padding-left: 5px;
+    padding-top: 2px;
+    & p{
+        white-space: pre-wrap;
+    }
+}
+.likesWrapper{
+    width: 100%;
+    height: 20%;
+    min-height: 25px;
+    max-height: 40px;
+    @include around;
+    border-top: 1px solid $elementColor;
+    & .like, .dislikes{
+        @include flex();
+    }
+    & .icon{
+        margin-top: 5px;
+        font-size:22px;
+    }
+}
+.extrasWrapper{
+    width: 30%;
+    height:100%;
+    @include center();
+    min-height: 200px;
+    border-left: 1px solid $elementColor;
+
+    & img{
+        width: 45px;
+        height: 45px;
+    }
+}
+.deleteOrUpdateIcons{
+    width:50px;
+    @include around();
+
+    & .icon{
+        font-size: 22px;
+    }
+}

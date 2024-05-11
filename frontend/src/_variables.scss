@@ -1,0 +1,44 @@
+$mainBg:#22223b;
+$secondBg:#4a4e69;
+$elementColor:#f09d8a;
+$fontColor:#f2e9e4;
+$buttonFont:#000;
+@mixin flex{
+    display: flex;
+    align-items: center;
+}
+@mixin center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin around{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+@mixin between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin small{
+    @media screen and (max-width:576px) {
+        @content
+    }
+}
+@mixin middle{
+    @media screen and (max-width:768px) {
+        @content
+    }
+}
+@mixin extraMiddle{
+    @media screen and (max-width:890px) {
+        @content
+    }
+}
+@mixin large{
+    @media screen and (max-width:992px){
+        @content
+    }
+}

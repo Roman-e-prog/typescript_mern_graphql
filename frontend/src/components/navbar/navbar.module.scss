@@ -1,0 +1,60 @@
+@import '../../variables';
+
+.container{
+    width: 100%;
+    @include flex();
+    height:120px;
+    position:sticky;
+    top:0;
+    z-index:500;
+    background:$secondBg;
+}
+.logo{
+    width: 120px;
+    height:100%;
+    & img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.navWrapper{
+    width: calc(100% - 120px);
+    height: 100%;
+    @include flex();
+    flex-direction: column;
+}
+.top{
+    width: 100%;
+    height: 20%;
+    background: $mainBg;
+    padding-right: 40px;
+    @include flex();
+    justify-content: flex-end;
+}
+.selectLanguage{
+    appearance: none;
+    background:inherit;
+    color:$fontColor;
+    padding: 0 20px;
+    border:$elementColor;
+}
+.navbar{
+    width: 100%;
+    height: 80%;
+}
+.linkList{
+    @include around;
+    width: 100%;
+    height: 100%;
+    padding: 0 40px;
+    list-style: none;
+    & li{
+        color:$fontColor;
+    }
+    & li:hover{
+        color:$elementColor;
+    }
+}
+.logBtn{
+    font-size:30px;
+}

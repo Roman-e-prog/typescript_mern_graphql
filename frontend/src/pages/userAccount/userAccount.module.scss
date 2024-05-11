@@ -1,0 +1,273 @@
+@import '../../variables';
+
+.container{
+    width: 100%;
+    min-height:100vh;
+    background:$mainBg;
+}
+.backToForum{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 40px;
+
+    & .navigateBtn{
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background:$elementColor;
+        color:$buttonFont;
+        font-weight: bold;
+        cursor:pointer;
+    }
+}
+.headerWrapper{
+    @include flex();
+}
+.topWrapper{
+    width: 50%;
+
+    & h1{
+        color:$fontColor;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+}
+.deleteAccountWrapper{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    & .sendBtn{
+        padding: 10px;
+        background: $elementColor;
+        color:$buttonFont;
+        font-weight: bold;
+    }
+    & .accountDeleteField{
+        width: 80%;
+        min-height:250px;
+        background:#000;
+        padding: 10px;
+
+       & .warningWrapper{
+            width:95%;
+            margin: 0 auto;
+            background:red;
+            color:$fontColor;
+            & p{
+                margin-top: 5px;
+            }
+        }
+        & .warnButtonWrapper{
+            width:95%;
+            margin: 20px auto;
+            @include around();
+
+            & .delete{
+                flex:1;
+                min-height:80px;
+                background:red;
+                color:$fontColor;
+                font-weight: bold;
+                border:none;
+                cursor:pointer;
+            }
+            & .goBack{
+                flex:1;
+                min-height:80px;
+                background:green;
+                color:$fontColor;
+                font-weight: bold;
+                border:none;
+                cursor:pointer;
+            }
+            & .adminQuestion{
+                flex:1;
+                min-height:80px;
+                background:$elementColor;
+                color:$buttonFont;
+                margin:0 5px;
+                font-weight: bold;
+                border:none;
+                cursor:pointer; 
+            }
+        }
+        & .messageField{
+            width: 100%;
+            & .messageFormWrapper{
+                width: 100%;
+                & .form{
+                    width: 100%;
+                    & .formGroup{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+
+                        & .label{
+                            color:$fontColor;
+                        }
+                    }
+                }
+                & .buttonWrapper{
+                    width: 100%;
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            } 
+        }
+    }
+}
+@include small{
+    .headerWrapper{
+        flex-direction: column;
+    }
+    .deleteAccountWrapper{
+        width: 80%;
+    }
+}
+.adminAnswers{
+    width: 100%;
+}
+.userWrapper{
+    width: 100%;
+    @include flex();
+
+    & .userData{
+        width: 100%;
+    }
+
+    & .formWrapper{
+        width: 100%;
+
+        & .form{
+            width: 100%;
+            @include flex();
+            & .formfields{
+                width: 50%;
+            }
+            & .formGroup{
+                width: 100%;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+
+                & .label{
+                    color:$fontColor;
+                    margin-bottom: 5px;
+                }
+                & .input{
+                    width: 50%;
+                    min-width:200px;
+                    background: $secondBg;
+                    color:$fontColor;
+                    padding-left: 2px;
+                    border:none;
+                    height:25px;
+                }
+            }
+            & .buttonWrapper{
+                margin-left: 20px;
+
+                & .sendBtn{
+                    padding: 5px;
+                    background:$elementColor;
+                    color:$buttonFont;
+                    cursor:pointer;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    & .userProfilePicture{
+        width: 50%;
+        @include center();
+        .dropzone{
+            & img{
+                width: 250px;
+                height: 250px;
+            }
+            @include small{
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+}
+.row{
+    width: 95%;
+    margin: 10px auto;
+    border:none;
+    height:4px;
+    background:$elementColor;
+}
+.contentWrapper{
+    margin-top: 20px;
+    width: 100%;
+    & .accountLink{
+        width: 100%;
+    }
+    & .fieldWrapper{
+        width: 80%;
+        min-height:180px;
+        margin: 0 auto;
+        border:1px solid $elementColor;
+        @include flex();
+
+        & .postWrapper{
+            width: 70%;
+            min-height:inherit;
+            color:$fontColor;
+            &  .headWrapper{
+                    width: 100%;
+                    height:20%;
+                    max-height:90px;
+                    border-bottom: 1px solid $elementColor;
+                    @include around();
+                    flex-wrap:wrap;
+                }
+        }
+        & .extrasWrapper{
+            width: 30%;
+            height:100%;
+            min-height:inherit;
+            border-left: 1px solid $elementColor;
+            @include center();
+            .image{
+                width: 50px;
+                height: 50px;
+            }
+         }
+         & .questionWrapper{
+            height:60%;
+            min-height: 130px;
+            color:$fontColor;
+            padding-left: 5px;
+         }
+         & .likesWrapper{
+            width:100%;
+            @include around();
+            height:min(20%, 30px);
+            border-top:1px solid $elementColor;
+
+            & .icon{
+                color:$fontColor;
+                font-size:22px;
+                margin: 4px;
+            }
+         }
+    }
+    @include small{
+        .fieldWrapper{
+            width: 100%;
+        }
+    }
+}
+
+
+
+

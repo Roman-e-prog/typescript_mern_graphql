@@ -1,0 +1,61 @@
+@import '../../../variables';
+
+.container{
+    width: 100%;
+    margin-top: 10px;
+}
+.formWrapper{
+    width: 80%;
+    margin:0 auto;
+    padding: 20px;
+}
+.form{
+    width: 100%;
+    @include flex();
+    flex-direction: column;
+}
+.formGroup{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+.label{
+    color:$fontColor;
+    margin-bottom: 5px;
+}
+.sendButton{
+    padding: 10px;
+    margin-top: 5px;
+    cursor:pointer;
+    font-weight:bold;
+    background:$elementColor;
+    color:$buttonFont;
+}
+.display{
+    width: 100%;
+}
+.fieldWrapper{
+    width: 80%;
+    margin: 5px auto;
+    border:1px solid $elementColor;
+    @include flex();
+    padding: 20px;
+}
+.contentWrapper{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    color:$fontColor;
+}
+
+ .iconWrapper{
+    width: 30%;
+    @include center();
+    
+    & .icon{
+        font-size:30px;
+        margin-right: 5px;
+        color:$fontColor;
+        cursor:pointer;
+    }
+ }

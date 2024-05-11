@@ -1,0 +1,53 @@
+@import '../../variables';
+.container{
+    width: 100%;
+}
+.closeWrapper{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    & span{
+        color:$fontColor;
+        cursor:pointer;
+        font-size:30px;
+        font-weight:bold;
+    }
+}
+.form{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    margin-bottom: 5px;
+}
+.input{
+    width: 100%;
+    height:22px;
+    padding: 2px;
+    background:inherit;
+    color:$fontColor;
+    border:1px solid $fontColor;
+}
+.answerEditInput{
+    color:#ccc;
+}
+.buttonWrapper{
+    width:100%;
+    margin: 10px 0; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    & .sendButton{
+        padding: 10px;
+        background:$elementColor;
+        color:$buttonFont;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}

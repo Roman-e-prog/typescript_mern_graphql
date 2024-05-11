@@ -1,0 +1,99 @@
+@import '../../../variables';
+
+.container{
+    width: 100%;
+    margin-top: 10px;
+    color:$fontColor;
+
+    & h3{
+        margin: 20px 40px;
+    }
+}
+.fieldWrapper{
+    width: 80%;
+    margin: 5px auto;
+    border:1px solid $elementColor;
+}
+.headWrapper{
+    width: 100%;
+    @include around();
+    height: 30px;
+    border-bottom:1px solid $elementColor;
+}
+.messageWrapper{
+    width: 100%;
+    min-height:80px;
+    padding-left: 2px;
+}
+.deleteAndDefineWrapper{
+    width: 100%;
+    height:38px;
+    border-top: 1px solid $elementColor;
+    @include around();
+
+    & .icon{
+        font-size: 28px;
+    }
+}
+.answerFormWrapper{
+    width: 80%;
+    margin: 20px auto;
+    padding: 5px;
+    border:1px solid $elementColor;
+    & .form{
+        width: 100%;
+
+        & .formGroup{
+            width: 100%;
+            display: flex;
+            flex-direction:column;
+
+            & label{
+                margin-bottom: 5px;
+            }
+            & input{
+                background:inherit;
+                border:none;
+                color:$fontColor;
+            }
+        }
+    }
+}
+.myDataGroup{
+    width: 100%;
+}
+.answerMessage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    & label{
+        margin-bottom: 5px;
+    }
+    & textarea{
+        width: 100%;
+    }
+}
+.buttonWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+
+    & .sendBtn{
+        padding: 10px;
+        background:$elementColor;
+        color:$buttonFont;
+        font-weight: bold;
+        cursor:pointer;
+    }
+}
+.deleteAndUpdateWrapper{
+    width: 100%;
+    height:38px;
+    border-top: 1px solid $elementColor;
+    @include flex();
+    & .icon{
+        font-size:28px;
+        margin-left: 10px;
+    }
+}

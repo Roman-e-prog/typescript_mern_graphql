@@ -1,0 +1,67 @@
+@import '../../_variables';
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: $mainBg;
+}
+.contentWrapper{
+    width: 100%;
+    min-height:calc(100vh - 120px - 80px);
+    background:inherit;
+    @include flex();
+
+    @include middle{
+        flex-direction: column;
+        margin: 20px 0;
+    }
+}
+.imageWrapper{
+    width: 50%;
+    @include center;
+    & img{
+        width:500px;
+    }
+    @include extraMiddle{
+        img{
+            width: 400px;
+        }
+    }
+    @include small{
+        img{
+            width: 300px;
+        }
+    }
+}
+.blogThemeWrapper{
+    width: 50%;
+    @include center;
+    flex-direction: column;
+      & h1{
+            margin-left: 30px;
+        }
+        @include large{
+            h1{
+                font-size:50px;
+            }
+            p{
+                font-size:22px;
+                width:400px;
+                margin-left: 60px;
+            }
+        }
+        @include small{
+            p{
+                font-size:14px;
+                width:300px;
+            }
+        }
+}
+.theme{
+    color:$fontColor;
+    font-size:30px;
+}
+.author{
+    color:$fontColor;
+    font-size:25px;
+}

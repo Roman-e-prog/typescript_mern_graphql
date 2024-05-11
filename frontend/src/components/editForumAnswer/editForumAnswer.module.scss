@@ -1,0 +1,39 @@
+@import '../../_variables.scss';
+
+.container{
+    width: 100%;
+}
+.closeWrapper{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    & span{
+        color:$fontColor;
+        cursor:pointer;
+        font-size:30px;
+        font-weight:bold;
+    }
+}
+.answerEditInput{
+    width: 80%;
+    margin: 0 auto;
+    color:#ccc;
+}
+.buttonWrapper{
+    width: 80%;
+    margin: 10px auto; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    & .sendButton{
+        padding: 10px;
+        background:$elementColor;
+        color:$buttonFont;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}

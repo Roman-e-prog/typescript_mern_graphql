@@ -1,0 +1,93 @@
+@import '../../_variables';
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background:$mainBg;
+}
+.contentWrapper{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    @include flex();
+    flex-direction: column;
+}
+.headWrapper{
+    width: 100%;
+    padding: 10px;
+    @include flex();
+}
+.intro{
+    width: 70%;
+    color:$fontColor;
+    & h1{
+        margin-bottom: 20px;
+        color:$fontColor;
+    }
+    & p{
+        margin: 10px;
+        white-space: pre-wrap;
+    }
+    & .author{
+        font-style: italic;
+    }
+}
+.image{
+    width: 30%;
+    padding: 10px;
+
+    & img{
+        width: 200px;
+        height: 200px;
+    }
+    @include middle{
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+.back{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+
+    & span{
+        padding: 5px;
+        background: $elementColor;
+        color:$buttonFont;
+        font-weight: bold;
+        cursor:pointer;
+    }
+}
+.line{
+    width: 100%;
+    margin: 10px auto;
+    border:none;
+    height: 2px;
+    background: $elementColor;
+}
+.textWrapper{
+    width: 100%;
+    color:$fontColor;
+
+    & p{
+        white-space: pre-wrap;
+    }
+}
+.imageWrapper{
+    @include flex();
+    & img{
+        width: 200px;
+        height: 200px;
+        margin-right: 10px;
+    }
+    @include middle{
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+}

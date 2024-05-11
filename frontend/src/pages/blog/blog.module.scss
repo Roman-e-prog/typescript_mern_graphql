@@ -1,0 +1,48 @@
+@import '../../_variables';
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background:$mainBg;
+}
+.contentWrapper{
+    width: 100%;
+    @include flex();
+    flex-direction: column;
+}
+#blogLink{
+    width: 100%;
+}
+.fieldWrapper{
+    width: 80%;
+    padding: 20px;
+    margin: 5px auto;
+    border:1px solid $elementColor;
+    @include flex();
+}
+.texts{
+    width: 50%;
+    padding: 5px;
+    display:flex;
+    flex-direction: column;
+    color:$fontColor;
+    & h3{
+        margin-bottom: 10px;
+    }
+    & p{
+        white-space: pre-wrap;
+    }
+    & .author{
+        font-style: italic;
+    }
+}
+.images{
+    width: 50%;
+    padding: 5px;
+    @include around();
+
+    & img{
+        width: 50px;
+        height: 50px;
+    }
+}

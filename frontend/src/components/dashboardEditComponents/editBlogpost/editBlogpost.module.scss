@@ -1,0 +1,48 @@
+@import '../../../variables';
+
+.container{
+    width: 100%;
+}
+.closeWrapper{
+    width: 100%;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    & span{
+        color:$fontColor;
+        cursor:pointer;
+        font-size:30px;
+        font-weight:bold;
+    }
+}
+.formWrapper{
+    width: 80%;
+    margin:0 auto;
+    padding: 20px;
+}
+.form{
+    width: 100%;
+    @include flex();
+    flex-direction: column;
+}
+.formGroup{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+.label{
+    color:$fontColor;
+    margin-bottom: 5px;
+}
+.sendButton{
+    padding: 10px;
+    margin-top: 5px;
+    cursor:pointer;
+    font-weight:bold;
+    background:$elementColor;
+    color:$buttonFont;
+}
+
+
+

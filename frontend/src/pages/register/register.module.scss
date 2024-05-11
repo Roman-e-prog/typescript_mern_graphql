@@ -1,0 +1,41 @@
+@import '../../_variables';
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background:$mainBg;
+    @include center();
+}
+.registerWrapper{
+    width: 50%;
+    height: 60%;
+}
+.titleWrapper{
+    & h1{
+        color:$fontColor;
+    }
+}
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.formGroup{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+.label{
+    margin-bottom: 5px;
+    color:$fontColor;
+}
+.input{
+    width: 80%;
+}
+.registerButton{
+    background: $secondBg;
+    cursor:pointer;
+    padding: 10px;
+    border:none;
+    color:$fontColor;
+}

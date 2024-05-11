@@ -1,0 +1,55 @@
+@import '../../_variables';
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: $mainBg;
+}
+.linkBar{
+    width: 100%;
+    min-height: 120px;
+    @include flex();
+    padding:0 20px;
+
+    & ul{
+        @include around();
+        height: 100%;
+        width: 100%;
+        list-style: none;
+        & .forumButton{
+            min-width:120px;
+            background:$elementColor;
+            color:$buttonFont;
+            padding: 10px;
+            cursor:pointer;
+            font-weight: bold;
+        }
+        & #forumLink{
+            display: block;
+        }
+    }
+    @include small{
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+    }
+}
+.content{
+    width: 100%;
+}
+.fieldWrapper{
+    width: 80%;
+    margin: 5px auto;
+    padding: 20px;
+    border:1px solid $elementColor;
+    color:$fontColor;
+    & h3{
+        margin-bottom: 10px;
+    }
+    & p{
+        white-space: pre-wrap;
+    }
+}

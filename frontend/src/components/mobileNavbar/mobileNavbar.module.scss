@@ -1,0 +1,79 @@
+@import '../../_variables.scss';
+
+.container{
+    width: 100%;
+    @include flex();
+    height:120px;
+    position:sticky;
+    top:0;
+    z-index:500;
+    background:$secondBg;
+}
+.logo{
+    width: 120px;
+    height:100%;
+    & img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.navWrapper{
+    width: calc(100% - 120px);
+    height: 100%;
+    @include flex();
+    flex-direction: column;
+}
+.top{
+    width: 100%;
+    height: 20%;
+    background: $mainBg;
+    padding-right: 40px;
+    @include flex();
+    justify-content: flex-end;
+}
+.selectLanguage{
+    appearance: none;
+    background:inherit;
+    color:$fontColor;
+    padding: 0 20px;
+    border:$elementColor;
+}
+.navbar{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px;
+    position:relative;
+}
+.navBarWrapper{
+    position:absolute;
+    top: 90px;
+    right:0px;
+    width:200px;
+    background:$secondBg;
+
+    & ul{
+        list-style: none;
+        & li{
+            color:$fontColor;
+            height: 30px;
+            padding:4px;
+            border-bottom:1px solid $fontColor;
+        }
+        & li:hover{
+            color: $elementColor;
+        }
+    }
+}
+
+.logBtn{
+    font-size:30px;
+    color:$fontColor;
+}
+.hamburger{
+    font-size:35px;
+    color:$fontColor;
+    margin-right: 20px;
+}
