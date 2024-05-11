@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "target": "ES6",       
+      "jsx": "react",                                
+      "experimentalDecorators": true,                   
+      "emitDecoratorMetadata": true,                  
+      "module": "commonjs",                               
+      "moduleResolution": "node",                  
+      "typeRoots": ["./node_modules/@types"],    
+      "allowJs": true,                                  
+      "checkJs": false,                                 
+      "outDir": "./build",                                   
+      "noEmit": true,                                   
+      "esModuleInterop": true,                             
+      "forceConsistentCasingInFileNames": true,            
+      "strict": true,                                      
+      "strictPropertyInitialization": false,
+      "files":["cloudinary.ts"]
+    }, "include": ["./**/*.ts", "index.d.ts", "utils/cloudinary.js"]
+  }
