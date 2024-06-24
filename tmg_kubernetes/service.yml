@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: tmg-app
+  namespace: dev
+spec:
+  selector:
+    app: tmg_app
+  ports:
+    - name: frontend
+      port: 80
+      targetPort: 3000
+    - name: backend
+      port: 81
+      targetPort: 5000

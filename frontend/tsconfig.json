@@ -26,7 +26,8 @@
     "jest",
     "@testing-library/jest-dom",
     "@types/jest",
-    "cypress"
+    "cypress",
+    "docker"
   ],
   "rootDir": "src",
 "paths": {

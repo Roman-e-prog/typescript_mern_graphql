@@ -1,0 +1,16 @@
+apiVersion: atlas.mongodb.com/v1
+kind: AtlasDeployment
+metadata:
+  name: mern-k8s-cluster
+spec:
+  projectRef:
+    name: graphql_practice
+  deploymentSpec:
+    name: "Cluster0"
+    providerSettings:
+      instanceSizeName: M0
+      providerName: TENANT
+      regionName: US_EAST_1
+      backingProviderName: AWS
+
+      # this will deploy the page on aws
