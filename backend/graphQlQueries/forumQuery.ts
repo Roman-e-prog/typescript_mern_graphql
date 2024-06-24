@@ -1,5 +1,5 @@
 import Forum from "../models/Forum";
-import ForumType from "../graphQlTypes/forum";
+import ForumType from "../graphQlTypes/Forum";
 import { GraphQLID, GraphQLList, GraphQLNonNull } from "graphql";
 
 const forums = {
